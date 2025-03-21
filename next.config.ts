@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   basePath: "/dnd",
   pageExtensions: ["md", "mdx", "ts", "tsx"],
+  images: {
+    unoptimized: true,
+  },
 };
 
 const withMDX = createMDX({
