@@ -1,0 +1,29 @@
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.map {
+  display: flex;
+  flex-direction: column; /* Change to column for row-first rendering */
+  gap: 0; /* Remove vertical gap between rows */
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row; /* Render columns within each row */
+  gap: 0; /* Remove horizontal gap between hexes */
+}
+
+.hex {
+  width: 120px; /* Maintain width at 80px */
+  height: 104px; /* Maintain aspect ratio (width * sqrt(3)/2) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  color: black; /* Set font color to black */
+}

@@ -5,7 +5,6 @@ import remarkGfm from "remark-gfm";
 const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: "/dnd",
   pageExtensions: ["md", "mdx", "ts", "tsx"],
   images: {
     unoptimized: true,
